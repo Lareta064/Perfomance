@@ -56,6 +56,31 @@
 	padding: 0;
 	margin: 0;
   }
+  h1 {
+    font-size: 72px;
+    font-style: italic;
+    font-weight: 800;
+    font-family: var(--rubItal);
+    line-height: 90%;
+    text-transform: uppercase;
+      color: var(--accent);
+    
+    span{
+    color: var(--dark);
+    }
+    @media(max-width:1279px) {
+      font-size: 56px;
+    }
+    @media(max-width:991px) {
+      font-size: 44px;
+    }
+   @media (max-width: 767px) {
+     font-size: 34px;
+   }
+    @media (max-width: 374px) {
+      font-size: 30px;
+    }
+  }
   figure {
 	margin: 0;
   }
@@ -128,6 +153,38 @@ select:-webkit-autofill:focus {
     line-height: 40px;
   }
 }
+.bg-white{
+  background-color: #fff;
+  padding: 80px 88px;
+  border-radius: 8px;
+  color: var(--dark);
+  @media(max-width:1279px){
+    padding: 52px 60px;
+  }
+  @media (max-width: 767px) {
+    padding:40px;
+  }
+  @media (max-width: 374px) {
+    padding: 40px 20px;
+  }
+}
+.py-100{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @media(max-width:1279px) {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+  @media (max-width: 991px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media (max-width: 767px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
 .container{
   width: 1230px;
   padding-left: 15px;
@@ -138,6 +195,10 @@ select:-webkit-autofill:focus {
   }
   @media (max-width: 991px) {
     width: 760px;
+  }
+  @media (max-width: 767px) {
+    width:100%;
+    max-width: 570px;
   }
 }
 
