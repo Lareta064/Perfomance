@@ -56,7 +56,7 @@
 	padding: 0;
 	margin: 0;
   }
-  h1 {
+  h1, .h1 {
     font-size: 72px;
     font-style: italic;
     font-weight: 800;
@@ -81,6 +81,46 @@
       font-size: 30px;
     }
   }
+  h2, .h2{
+    font-size: 48px;
+    line-height: 100%;
+    text-transform: uppercase;
+    
+    span{
+      
+      color: var(--accent);
+    }
+    @media (max-width: 1279px) {
+      font-size: 40px;
+    }
+    @media (max-width: 991px) {
+     font-size: 32px;
+    }
+    @media (max-width: 767px) {
+      font-size: 24px;
+    }
+  }
+.txt-bold{
+
+    font-size: 22px;
+    line-height: 120%;
+    margin-top: 27px;
+
+    @media(max-width:1279px) {
+      font-size: 20px;
+    }
+
+    @media(max-width:991px) {
+      font-size: 18px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 16px;
+      max-width: 80%;
+      margin-top: 20px;
+    }
+  }
+
   figure {
 	margin: 0;
   }
@@ -161,11 +201,32 @@ select:-webkit-autofill:focus {
   @media(max-width:1279px){
     padding: 52px 60px;
   }
+    @media (max-width: 991px) {
+      padding: 50px;
+    }
   @media (max-width: 767px) {
     padding:40px;
   }
   @media (max-width: 374px) {
     padding: 40px 20px;
+  }
+}
+.px-88{
+  padding-left: 88px;
+  padding-right: 88px;
+  @media(max-width:1279px) {
+    padding-left:  60px;
+    padding-right: 60px;
+  }
+
+  @media (max-width: 767px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (max-width: 374px) {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 .py-100{
