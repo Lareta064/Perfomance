@@ -193,7 +193,8 @@ select:-webkit-autofill:focus {
     line-height: 40px;
   }
 }
-.bg-white{
+
+.bg-white,.bg-dark{
   background-color: #fff;
   padding: 80px 88px;
   border-radius: 8px;
@@ -210,6 +211,16 @@ select:-webkit-autofill:focus {
   @media (max-width: 374px) {
     padding: 40px 20px;
   }
+}
+.main-content{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  &>*+*{margin-top: 12px;}
+}
+.bg-dark {
+  background-color: var(--dark);
+  color: white;
+  border: 4px solid #EF3F56;
 }
 .px-88{
   padding-left: 88px;
