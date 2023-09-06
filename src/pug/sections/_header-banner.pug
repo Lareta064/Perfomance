@@ -30,15 +30,23 @@
 
 
 //================= Creatively striking ===============
-.flex-wrapper.flex-wrapper--reverse
+.creatively-section
 	.container
-		.flex-wrapper__content.bg-dark
-			.flex-wrapper__picture
-				img(src="./img/shape.svg", width="256" height="256" alt="img")
-			.flex-wrapper__text
-				.h2 #[span //] Creatively striking
-				.txt-bold
-					p We place creativity at the heart of our marketing strategy, leveraging diverse creatives and conducting thorough testing. Through this approach, we adeptly fine-tune each campaign, unlocking its maximum potential.We place creativity at the heart of our marketing strategy, leveraging diverse creatives and conducting thorough testing. Through this approach, we adeptly fine-tune each campaign, unlocking its maximum potential.
+		.header-row.header-row--grid.swipe-block
+			.header-row-label AMERICAS
+			.header-row-label EUROPE
+			.header-row-label OCEANIA
+			.header-row-label YOU NAME IT
+
+	.flex-wrapper.flex-wrapper--reverse
+		.container
+			.flex-wrapper__content.bg-dark
+				.flex-wrapper__picture
+					img(src="./img/shape.svg", width="256" height="256" alt="img")
+				.flex-wrapper__text
+					.h2 #[span //] Creatively striking
+					.txt-bold
+						p We place creativity at the heart of our marketing strategy, leveraging diverse creatives and conducting thorough testing. Through this approach, we adeptly fine-tune each campaign, unlocking its maximum potential.We place creativity at the heart of our marketing strategy, leveraging diverse creatives and conducting thorough testing. Through this approach, we adeptly fine-tune each campaign, unlocking its maximum potential.
 
 //=================  ACQUISITION DONE RIGHT ===============
 .flex-wrapper
@@ -68,3 +76,25 @@
 		.between-block__content.px-88
 			.h2 #[span //]  The art of reaching targets
 			p We have the expertise to get you to your growth destination.
+
+//=================== covering all the bases ===========
+.covering-section
+	.container
+		.header-row.bg-red
+			.h2 covering all the bases
+		
+		.covering-cards.swipe-block
+			//====single item =======			
+			.border-card
+				.h3 #[span //] PLAN
+				p Your goals, our expertise: let our marketing maestros assist you in hitting those targets and creating a custom plan for success.
+			
+			//====single item =======
+			.border-card
+				.h3 #[span //] EXECUTE
+				p Our team will craft the ideal campaign to reach your goals. Count on our in-house creative, copywriting, and digital media experts to deliver.
+			
+			//====single item =======
+			.border-card
+				.h3 #[span //] OPTIMIZE
+				p A campaign's journey doesn't conclude upon its launch. We engage in continuous analysis and agile adjustments throughout its timeline, ensuring the attainment of optimal results.
