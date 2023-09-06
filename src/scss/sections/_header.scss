@@ -1,0 +1,27 @@
+.header{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.header-content{
+	display: flex;
+	align-items: center;
+	padding-left: 85px;
+	padding-right: 85px;
+	.btn{margin-left: 50px;}
+	.header-menu{margin-left: auto;
+		ul{
+			display: flex;
+		   align-items: center;
+		   li + li{margin-left: 45px;}
+		   a{
+				color: var(--white); 
+				text-transform: uppercase; 
+				transition: .5s;
+			}
+		   a:hover{
+			color: var(--accent);
+		   }
+	  }
+	
+	}
+}

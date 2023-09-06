@@ -1,0 +1,41 @@
+include ../mixins/mixins.pug
+block variables
+
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		
+		//====убрать синий цвет у ссылок в сафари ========
+		meta(name="format-detection" content="telephone=no")
+		link(rel="stylesheet", href="css/main.css")
+		title !{title}
+		style.
+			@font-face {
+				font-family: "Roboto-Medium";
+				src: url(./fonts/RobotoMono-Medium.woff2) format("woff2");
+				font-weight: 500;
+				font-style: normal;
+				font-display: swap;
+			}
+			@font-face {
+				font-family: "Rubik-Medium";
+				src: url(./fonts/Rubik-Medium.woff2) format("woff2");
+				
+				font-style: normal;
+				font-display: swap;
+			}
+			@font-face {
+				font-family: "Rubik-Italic";
+				src: url(./fonts/Rubik-ExtraBoldItalic.woff2) format("woff2");
+				font-display: swap;
+			}
+	body
+		
+		block content
+		
+		
+		//=============== мои скрипты ===================	
+		script(src="js/main.js")
