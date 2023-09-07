@@ -10,7 +10,7 @@
 				img(src="./img/header-pic.svg",  alt="img")
 
 //================= What makes us ===============
-.what-makes
+.what-makes#about
 	.container
 		.header-wrapper
 			.h2 #[span //] What makes us... US
@@ -60,7 +60,7 @@
 
 
 //=================== covering all the bases ===========
-.covering-section
+.covering-section#services
 	.container
 		.header-row.bg-red
 			.h2 covering all the bases
@@ -160,29 +160,43 @@
 				p A campaign's journey doesn't conclude upon its launch. We engage in continuous analysis and agile adjustments throughout its timeline, ensuring the attainment of optimal results.
 
 //============== partners ==================
-.partners
+.partners#partners
 	.container
 		.header-wrapper
-			.h2 #[span //]  The art of reaching targets
-			p We have the expertise to get you to your growth destination.
+			.h2 #[span //] partners we’ll die for
+			p That's just how we groove.
         
 		.partners-content
 			.partners-slider.owl-carousel.swipe-block
 				.partners-card
-					img(src="./img/partner.webp", alt="LOGO")
+					img(src="./img/1.webp", alt="LOGO")
 				.partners-card
-					img(src="./img/partner.webp", alt="LOGO")
+					img(src="./img/2.webp", alt="LOGO")
 				.partners-card
-					img(src="./img/partner.webp", alt="LOGO")
+					img(src="./img/3.webp", alt="LOGO")
 				.partners-card
-					img(src="./img/partner.webp", alt="LOGO")
-				.partners-card
-					img(src="./img/partner.webp", alt="LOGO")
-				.partners-card
-					img(src="./img/partner.webp", alt="LOGO")
+					img(src="./img/4.svg", alt="LOGO")
 			
 			.partners-text.bg-white
 				.h2  #[span //] One for all
 				.txt-bold
 					p We take pleasure in forging new connections within the industry, and we steadfastly support our enduring partners. Above all, we cherish close relationships.
 					p Company size and age hold no sway; our sole focus revolves around results and the sheer joy we derive from accomplishing them.
+
+//==== feedback ===============
+.feedback#feedback
+	.container
+		.header-wrapper
+			.h2 #[span //]  less talk, more Acquisition
+			p Have a project for us?
+		.feedback-content.bg-white.py-100
+			.h2 #[span //] CONTACT US
+			form.contact-form(action="" method="POST")
+				.form-item
+					input(type="text" placeholder="Name")
+				.form-item
+					input(type="email" placeholder="Email")
+				.form-item
+					textarea(type="text" placeholder="Message")
+				.form-btn
+					button(type="submit").btn Contact us

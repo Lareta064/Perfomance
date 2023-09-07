@@ -22,7 +22,11 @@ document.addEventListener("DOMContentLoaded", function () {
 				bodyEl.classList.add('lock');
 			}
 		});
-
+		mobileMenu.addEventListener('click', function(){
+			this.classList.remove('active');
+			menuToggle.classList.remove('active');
+			bodyEl.classList.remove('lock');
+		})
 		/*======== закрывать моб меню при ресайзе экрана ====== */
 		window.addEventListener('resize', function () {
 			if (this.innerWidth > 767) {
