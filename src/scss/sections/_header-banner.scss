@@ -138,6 +138,8 @@
 	margin-bottom: 12px;
 	margin-left: -12px;
 	margin-right: -12px;
+	background-color: #fff;
+	color: var(--dark);
 	.h2, h2{line-height: inherit;}
 	@media (max-width: 1279px) {
 
@@ -174,6 +176,8 @@
 	margin-left: 0;
 	margin-right: 0;
 	padding: 0!important;
+	background-color: var(--dark);
+	
 	
 	display: grid;
 	gap:12px;
@@ -235,4 +239,37 @@
 	@media (max-width: 1199px) {
 		grid-template-columns: repeat(3, 1fr);
 	}
+}
+.small-card{
+	background-color: var(--accent);
+	border-radius: 8px;
+	flex-shrink: 0;
+	padding: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #FFF;
+	text-align: center;
+	font-family: var(--roboto);
+	font-size: 24px;
+	line-height: 100%;
+	text-transform: lowercase;
+		@media(max-width:1279px) {
+			font-size: 20px;
+			padding: 18px;
+			
+		}
+		@media(max-width:991px) {
+			font-size: 16px;
+			padding: 16px;
+		}
+		@media (max-width: 767px) {
+		min-width: 140px;
+		}
+}
+.pillars-cards{
+	display: grid;
+	gap:12px;
+	grid-template-columns: repeat(5, 1fr);
+
 }

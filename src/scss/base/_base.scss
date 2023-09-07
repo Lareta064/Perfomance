@@ -271,8 +271,8 @@ select:-webkit-autofill:focus {
 .bg-red{
 
   border-radius: 8px;
-  color: white;
-  background: #EF3F56;
+  color: white!important;
+  background: #EF3F56!important;
 }
 .swipe-block{
   overflow: hidden;
