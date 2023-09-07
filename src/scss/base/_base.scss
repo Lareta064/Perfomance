@@ -133,7 +133,7 @@
 
     @media (max-width: 767px) {
       font-size: 16px;
-      max-width: 80%;
+     
       margin-top: 20px;
     }
   }
@@ -231,6 +231,9 @@ select:-webkit-autofill:focus {
   padding-top: 12px;
   padding-bottom: 12px;
   &>*+*{margin-top: 12px;}
+  @media (max-width: 767px) {
+    overflow: hidden;
+  }
 }
 .bg-dark {
   background-color: var(--dark);
