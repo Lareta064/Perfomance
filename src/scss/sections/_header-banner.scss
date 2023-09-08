@@ -204,7 +204,7 @@
 		
 		}
 	}
-	.border-card:nth-child(5n +1),.border-card:nth-child(5n+2) {
+	.border-card:nth-child(5n+1),.border-card:nth-child(5n+2) {
 		width: calc((100% - 12px) /2);
 		@media (max-width: 767px) {
 			width: 280px;
@@ -275,6 +275,7 @@
 .partners-slider{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+	grid-auto-rows: 1fr;
 	gap:12px;
 	@media(max-width:767px){
 		display: flex;

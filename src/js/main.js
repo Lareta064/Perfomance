@@ -1,5 +1,24 @@
 document.addEventListener("DOMContentLoaded", function () {
+	// smouth scroll 
+	$(".header, #backtop").on("click", "a", function (event) {
+		
+		event.preventDefault();
+		let id = $(this).attr('href'),
+			top = $(id).offset().top;
+		
+		$('body,html').animate({ scrollTop: top }, 600);
+	}); 
+	const backtopBtn = document.querySelector('#backtop');
 
+	backtopBtn.style.opacity = 0;
+
+	document.addEventListener('scroll', function () {
+		if (window.pageYOffset > 300) {
+			backtopBtn.style.opacity = 1;
+		} else {
+			backtopBtn.style.opacity = 0;
+		}
+	});
 	/*============= open/close mob menu ===============*/
 	const menuToggle = document.querySelector('#menu-toggle');
 
@@ -38,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			}
 		});
 	}
-
+    // slider partners logo
 	const owlConfig = {
 		items:1,
 		margin:12,
